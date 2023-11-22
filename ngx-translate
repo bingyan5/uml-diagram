@@ -185,4 +185,71 @@ export class AnotherCustomLoader implements TranslateLoader {
     return this.http.get(translationPath);
   }
 }
-Make sure you adjust the paths and loading logic based on your actual project structure and requirements. In this example, the AnotherCustomLoader assumes that translation files are stored in the assets/i18n/ directory and follow a specific naming convention (another-translations-{lang}.json). Customize it to fit your application's needs.
+Make sure you adjust the paths and loading logic based on your actual project structure and requirements. In this example, the AnotherCustomLoader assumes that translation files are stored in the assets/i18n/ directory
+and follow a specific naming convention (another-translations-{lang}.json). Customize it to fit your application's needs.
+#####################
+Certainly! I'll include the CustomLoader code in this response. Let's assume that CustomLoader is a simple loader that loads translations from a different location or has some custom logic. Here's an example:
+
+typescript
+Copy code
+// custom-loader.ts
+
+import { TranslateLoader } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+export class CustomLoader implements TranslateLoader {
+  constructor(private http: HttpClient, private translationPath: string) {}
+
+  getTranslation(lang: string): Observable<any> {
+    const translationFileUrl = `${this.translationPath}${lang}.json`;
+
+    return this.http.get(translationFileUrl);
+  }
+}
+In this example, CustomLoader is designed to load translations from a specified path (translationPath). This loader uses the Angular HttpClient to fetch translation files.
+
+Now, let's integrate this CustomLoader into the AppModule:
+
+typescript
+Copy code
+// app.module.ts
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { CustomLoader } from './custom-loader';
+import { AnotherCustomLoader } from './another-custom-loader';
+import { CustomTranslateLoader } from './custom-translate-loader';
+
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (HttpLoaderFactory, customLoader, anotherCustomLoader) =>
+          new CustomTranslateLoader(HttpLoaderFactory, [customLoader, anotherCustomLoader]),
+        deps: [TranslateHttpLoader, CustomLoader, AnotherCustomLoader],
+      },
+    }),
+  ],
+  declarations: [],
+  bootstrap: [],
+  providers: [
+    CustomLoader, // Provide CustomLoader as a service
+    AnotherCustomLoader, // Provide AnotherCustomLoader as a service
+  ],
+})
+export class AppModule {}
+Now, CustomLoader is provided as a service in the AppModule. This means that it can be injected wherever it is needed, including in the deps array of the TranslateModule configuration.
+
+Adjust the CustomLoader implementation based on your specific requirements, such as handling errors, modifying URLs, or adding additional logic.
