@@ -1,0 +1,38 @@
+	• SpringBoot模块化开发利器：@Import注解使用指南 来自 <https://mp.weixin.qq.com/s/pYIXwl6MRJWzDqwVR4crWQ> 
+	• 谁还在项目中用 Java Calendar 类处理时间 来自 <https://mp.weixin.qq.com/s/bF8H9JCHYXc3-8cAaofKbA> 
+	• Spring Boot + 事务钩子函数，太强了来自 <https://mp.weixin.qq.com/s/M3dC7eEII7GYjdXcPror-g>  
+	• 公司新来一个同事，把枚举运用得炉火纯青 来自 <https://mp.weixin.qq.com/s/skkApkYPq8AUCajBlNXUng> 
+	• Spring Boot与观察者模式：实现数据同步更新机制 来自 <https://mp.weixin.qq.com/s/gWUHlzE-bjEGgBIdmhHTrw> 
+	• java web的Filter(过滤器)，Interceptor(拦截器) 和 Aspect(切面) 来自 <https://mp.weixin.qq.com/s/uBA345GU2anrNmYDbpHXvQ> 
+	• Jackson才是王！SpringBoot优雅的控制JSON数据 来自 <https://mp.weixin.qq.com/s/w-5Y_ZKjqV-D54olCGmq-g> 
+	• 当心！SpringBoot在以下几种情况将导致代理失效 来自 <https://mp.weixin.qq.com/s/4kg0ZPJS4sYIK-Wcir5yFw> 
+	• 分享几个你不知道的高级SpringBoot最佳实践 来自 <https://mp.weixin.qq.com/s/zubf0-Z0fOvzWcVUdnO4Qw> 
+	• 14 个 SpringBoot 优化小妙招，写代码像写诗 来自 <https://mp.weixin.qq.com/s/UQ_FCWJ9zS1ZmgqBsWP4TQ> 
+	• 不用一行代码查看方法耗时，这款 IDEA 插件有点酷！来自 <https://mp.weixin.qq.com/s/KL_sU9eXMHxyw5aicnnhcw> 
+	• 用了Stream后，代码反而越写越丑？来自 <https://mp.weixin.qq.com/s/Uv8i__3z-08_01hLKojc6A> 
+	• 不好意思，HttpClient 该换了 来自 <https://mp.weixin.qq.com/s/cloKyuaKATh24JTssTn7Yw> 
+	• 这才是Spring为什么不支持static字段注入的原因 来自 <https://mp.weixin.qq.com/s/YrFHt3J5ALdeXe9TNMjBXg> 
+	• SpringBoot中这5种高大上的yml文件读取方式，你知道吗？来自 <https://mp.weixin.qq.com/s/iKMdSP5BM0OAt1N4h6e4IQ> 
+	• SQL 递归思想 来自 <https://mp.weixin.qq.com/s/2m-abWUxjv24YBnw0TI90Q> 
+	• 刚进公司项目中cookie、session、token都看不懂，领导安排都任务很懵逼 来自 <https://mp.weixin.qq.com/s/hQEcOA5kXkVHDvBAwrts6w> 
+	• SpringBoot + 事务钩子函数，打造高效支付系统！来自 <https://mp.weixin.qq.com/s/Gk_2HYtdnFtZHRniTkEdAA>
+	• 10个高级的 SQL 查询技巧 来自 <https://mp.weixin.qq.com/s/LnqVg3qBdS1gbwBJwtm5GA> 
+	• 使用Vault保护SpringBoot配置文件中的敏感数据 来自 <https://mp.weixin.qq.com/s/Uwcql3p-rGv6IfYxDEppuQ> 
+	
+	•  轻松且优雅的 Spring 注解工具类 来自 <https://mp.weixin.qq.com/s/zawNzPlOWUj7GoPwE9zdfA> 
+	• 解锁 SpringBoot 的强大配置功能 来自 <https://mp.weixin.qq.com/s/Hs-WewnuzdXf0Ofqh4MFpA> 
+	• 前端鉴权必须了解的 5 个兄弟：cookie、session、token、jwt、单点登录  来自 <https://mp.weixin.qq.com/s/skIUJF_UoBqvZNBgnzN2RQ> 
+	• SpingBoot的5个扩展点，超级实用！来自 <https://mp.weixin.qq.com/s/hTt2am1rCoGLXuWsNC_9Ig> 
+	• 提高千倍效率的35个编码小技巧，老司机带你飞！来自 <https://mp.weixin.qq.com/s/b9CDLL6nw9Y1i3AHi4qlJg> 
+	• SpringBoot中15个常用启动扩展点，你用过几个？来自 <https://mp.weixin.qq.com/s/w4t4nbFxDBkL5rHPlSiX7A> 
+	• SpringBoot 实现动态切换数据源，这样做才更优雅！来自 <https://mp.weixin.qq.com/s/abFgZDOu-N1pR4S0L4q3UQ> 
+	• Java手写分布式锁的实现（非常牛逼）来自 <https://mp.weixin.qq.com/s/x7_9b0nLwiL6uW9C2bLNQw> 
+	• Spring Boot资源加载：9种方式轻松读取resources目录下文件 来自 <https://mp.weixin.qq.com/s/9N_n0gffcLE0FQDrkYeQcA> 
+	• Spring 中经典的 9 种设计模式，打死也要记住啊！来自 <https://mp.weixin.qq.com/s/k_F-8oSUYKSNtbYvxrQ0QA> 
+	• 太强了！看看别人设计的安全好用的OpenApi！来自 <https://mp.weixin.qq.com/s/QjRvG3vZjAI0dNEktdSIiQ> 
+	• 40张图看懂分布式追踪系统原理及实践 来自 <https://mp.weixin.qq.com/s/2GqytBBfpTN9bJN_QiFJBQ> 
+	• Java教程-Comparable和Comparator之间的区别 来自 <https://mp.weixin.qq.com/s/DmvwRgHBo27rspyqKgKRWg> 
+	• 答应我， 不要再用 if (obj != null) 判空了 来自 <https://mp.weixin.qq.com/s/ZZ2byQQx2eTsWLIxv9rOMA> 
+	• 别再问我postman如何使用了，看这篇就行 来自 <https://mp.weixin.qq.com/s/LCUk9tPd1iVsw_-hPwr_sA> 
+	• 彻底理解 Kafka，这一篇文章就够了！！！来自 <https://mp.weixin.qq.com/s/BqqYgd5mdOsBE9yoJPHc1w>
+	• 对双数据源互换实现的改进（improve to 2-dataSource swapping）来自 <https://afoo.me/posts/2005-08-10-improve-datasources-swap-solution.html> 
