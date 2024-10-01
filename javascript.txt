@@ -47,3 +47,4 @@
 	• 三万字盘点Spring/Boot的那些常用扩展点 来自 <https://mp.weixin.qq.com/s/hpphBMwfiLi4a7cwvZOCbg> 
 	• Java 中如何使用枚举来消除 if/else 来自 <https://mp.weixin.qq.com/s/p1KQe41B2rfnQEwJsgoH6Q> 
 	• 使用 JCommander 解析命令行参数 来自 <https://mp.weixin.qq.com/s/xQCJK_WAOJbfOxF47FSIVg> 
+      You-Dont-Know-JS <https://github.com/getify/You-Dont-Know-JS/tree/2ed-zh-CN> 
