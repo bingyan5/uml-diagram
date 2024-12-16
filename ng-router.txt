@@ -1,0 +1,8 @@
+Angular 记录 - 如何在全局中设计一个路由信息的收集器
+https://juejin.cn/post/6844904046956904455
+Angular-路由
+https://juejin.cn/post/6844903734401581063
+如何在Angular中重新加载一个页面/组件？
+https://developer.aliyun.com/article/1396208
+Angular 18+ 高级教程 – Routing 路由 (原理篇)
+https://www.cnblogs.com/keatkeat/p/17968862
