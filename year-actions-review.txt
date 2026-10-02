@@ -1,0 +1,77 @@
+Q1:
+Converted BBPC Controllers to a WebFlux-based implementation to support reactive programming.   
+Migrated the BBPC and bbwp-api modules to Spring Boot 3.x and Hibernate 6.  
+Upgraded the BBPC Kafka common library for bbpc-currency and merged 25R4 legacy code to currency.   
+Refactored permission checks on BBPC endpoints prior to requesting BBCM.   
+Integrated Spring Boot Actuator into the BBPC and BBCM modules for improved application monitoring.   
+Analyzed and investigated the root cause of the session fixation issue in the BBCM Vera code.   
+Developed unit tests to achieve 80% test coverage for the aam-api-workflow module.   
+Fixed a total of 62 system defects, specifically addressing 34 defects related to bbpc-currency 
+--------------
+Spearheaded Architectural Upgrades: Migrated the BBPC and bbwp-api modules to Spring Boot 3.x and Hibernate 6, and converted BBPC Controllers to a WebFlux-based reactive implementation.
+
+Modernized Integrations: Upgraded the BBPC Kafka common library for bbpc-currency and successfully merged 25R4 legacy code into the currency baseline.
+
+Fortified Security & Observability: Refactored permission checks on BBPC endpoints, analyzed the root cause of the BBCM Vera session fixation vulnerability, and integrated Spring Boot Actuator into the BBPC and BBCM modules for proactive monitoring.
+
+Tackled Technical Debt: Drove unit test coverage to 80% for the aam-api-workflow module and systematically resolved a backlog of 62 complex system defects (34 related to bbpc-currency, 28 fixed on sp5).
+--------------------------------
+Q2:
+
+Removed all block() methods for Mono across the BBPC module.   
+Merged all delta changes from the dev1 environment to dev2.   
+Removed unnecessary informational logging across both BBPC and BBCM modules and cleaned up the application-local.yml files.   
+Added new product and price-list items specifically for the Wire Payments Service (WPS).   
+Supported and configured cmsof Dynatrace alerts across the dev, sit, and pat environments.   
+Created a minor version of the Kafka common library from BBOAS and updated dependencies to align with the bbpc-currency version.   
+Fixed 15 functional defects related to the bbpc-currency migration, including implementing retry logic for Kafka failed connectivity on app startup and health checks.   
+------------
+Optimized Reactive Architecture: Eliminated all blocking calls (block()) for Mono across the BBPC module to fully leverage non-blocking, reactive workflows.   
+Environment Synchronization: Managed continuous delivery by successfully merging all delta code changes from the dev1 to dev2 environments.   Configuration & Log 
+Optimization: Improved application performance and log clarity by stripping unnecessary informational logging across the BBPC and BBCM modules and streamlining local application configurations (application-local.yml).   
+Feature Integration: Expanded platform capabilities by configuring and adding new product and price-list items specifically for the Wire Payments Service (WPS).   
+Enhanced Observability: Strengthened proactive system monitoring by configuring targeted CMSOF Dynatrace alerts across the dev, sit, and pat environments.   
+Dependency Management: Upgraded core messaging integrations by creating a minor version of the Kafka common library from BBOAS, seamlessly aligning dependencies with the bbpc-currency version.   
+Defect Resolution & Resilience: Resolved 15 functional defects stemming from the bbpc-currency migration, and bolstered application stability by engineering custom retry logic for Kafka connectivity failures during app startup and health checks.  
+
+=======================
+Q3:
+Actions TakenDeveloped and added a new feature enabling BBPro to send unfreeze requests to deposit accounts in DAS CPA when a BAR case is resolved, alongside unfreeze and retry capabilities.   
+Refactored CIFAddLodgeEventAction to support the new BAR Unfreeze design.   
+Modified the front-end UI for the BBPro/BAR Unfreeze Case Error Overlay Screen.   
+Executed security scans to check for vulnerabilities and actively resolved identified security issues within BBCM.   
+Refactored the Compliance Config and Compliancy action to model the proposed LLD.   
+Performed CMSOF ERS Mapping 2026 Analysis and modified EDLM Remediation for CMSOF, including updates to BBPC - aam_case_detail.   
+Fixed 3 specific defects: an addLodgeEvent failure for Freeze in BBPRO Dev-asp, AAM sorting and filtering issues following currency migration, and a display bug showing raw code (${caseHistoryComment}) instead of the actual G01 lodge comment in Case History.   
+--------
+Engineered Automated Workflows: Developed an end-to-end feature enabling BBPro to automatically trigger unfreeze requests to deposit accounts in DAS CPA upon BAR case resolution, complete with robust unfreeze and retry capabilities.   
+Backend Refactoring: Redesigned the CIFAddLodgeEventAction to seamlessly support and integrate with the new BAR Unfreeze architecture.   
+UI Enhancements: Updated the front-end user interface by modifying the BBPro and BAR Unfreeze Case Error Overlay screens to improve error handling and user feedback.   
+Proactive Security Management: Executed comprehensive security scans and successfully remediated identified vulnerabilities within the BBCM module to harden system security.   
+Architectural Alignment: Refactored core compliance configurations and compliancy actions to strictly align with the proposed Low Level Design (LLD) models.   
+Strategic Analysis & Remediation: Conducted CMSOF ERS Mapping 2026 analysis and implemented targeted EDLM remediations for CMSOF, including critical updates to the BBPC - aam_case_detail component.   
+Defect Resolution: Successfully resolved three specific functional defects by fixing an addLodgeEvent failure during freezes in the BBPRO Dev-asp environment, correcting AAM sorting and filtering issues post-migration, and repairing a UI bug that exposed raw code (${caseHistoryComment}) instead of the actual G01 lodge comment in the Case History. 
+
+=======================
+Q4:
+Actions TakenCreated a new BBCM comply endpoint specifically for CAR G03/G04 and BAR G01/G03/G04 lodge actions.   
+Refactored the BBPC BAR Account Freeze functionality and the bbpc-ui to route requests through the new BBCM comply endpoint for BAR Account Freeze, CAR G03/G04, and BAR G01/G03/G04 lodges.   
+Cleaned up the code for BAR Account Freeze, CAR G03/G04, and BAR G01/G03/G04 lodge operations across both bbpc-ui and bbpc-api.   
+Conducted an OAS Spec/Stoplight check for BBPro and analyzed the requirements for the CMSOF 4.0 migration.   
+Fixed 9 specific defects, including resolving an NPE in the DefaultRetrieveCaseDefinitionActionHandler.retrievePanelFilters method, preventing duplicate case-document inserts during BAR updates, and fixing the failing BAR Deficiency Pipeline.   
+-------------
+* **Endpoint Development:** Engineered a consolidated BBCM comply endpoint specifically designed to handle CAR G03/G04 and BAR G01/G03/G04 lodge operations.
+
+
+* **Full-Stack Refactoring:** Restructured the BBPC BAR Account Freeze functionality and updated the `bbpc-ui` to seamlessly route all BAR Account Freeze and CAR/BAR lodge requests through the newly created BBCM comply endpoint.
+
+
+* **Codebase Optimization:** Executed a comprehensive code cleanup for BAR Account Freeze and CAR/BAR lodge workflows across both the frontend (`bbpc-ui`) and backend (`bbpc-api`) architectures.
+
+
+* **Strategic Planning & Compliance:** Conducted a rigorous OAS Spec/Stoplight check for the BBPro application and proactively analyzed the technical requirements for the upcoming CMSOF 4.0 migration.
+
+
+* **Defect Resolution & Pipeline Stabilization:** Successfully resolved 9 complex defects, which included eliminating a critical NullPointerException (NPE) in the `DefaultRetrieveCaseDefinitionActionHandler.retrievePanelFilters` method, preventing duplicate case-document inserts during BAR updates, and repairing the failing BAR Deficiency Pipeline.
+
+
