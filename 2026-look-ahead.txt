@@ -1,0 +1,24 @@
+**Skills & Capabilities Developed This Year**
+
+* Significantly elevated technical proficiency within the Spring Boot 3.x ecosystem, specifically mastering frameworks like Hibernate and WebFlux for reactive programming.
+
+
+* Deepened enterprise business acumen by refactoring core system features during the currency migration, gaining comprehensive knowledge of AAM, BBC, BAR, and CAR workflows.
+
+
+* Strengthened system integration expertise by successfully connecting the `bbpc-currency` module with critical enterprise applications, including BBCA, DAS, CIF, and Kafka.
+
+
+* Increased practical application of advanced software design patterns, resulting in greater confidence when architecting and writing complex code post-migration.
+
+
+
+**Strategic Focus Areas for Next Year**
+
+* Expand cross-platform architectural knowledge by mastering broader ecosystem applications, specifically targeting BBOAS and Opalite to understand their complex integration patterns.
+
+
+* Strategically upskill in artificial intelligence technologies to prepare for future enterprise integrations.
+
+
+* Focus heavily on mastering Python, the Model Contextual Protocol (MCP), and the Spring AI framework to seamlessly bridge foundational enterprise architecture with modern AI capabilities.
